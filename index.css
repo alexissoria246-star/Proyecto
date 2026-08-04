@@ -1,0 +1,371 @@
+*{box-sizing: border-box;}
+
+body{
+    background-color: rgb(30,30,30);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+
+h1{font-size: 2.5em;}/*Titulo*/
+h2{font-size: 2em;}/*Secciones*/
+h3{font-size: 1.5em;}/*Libros*/
+p{  font-size: 1.5em;}/*Descr*/
+ul{list-style: none;}
+#nuestroslibros{
+    text-align: center;
+    color:white;
+}
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: blueviolet;
+    margin-top: auto;
+
+
+}
+
+button:hover{
+    background-color: rgb(101,33,165);
+}
+
+.container{
+   width: 90%;
+   max-width: 1200px;
+   margin: auto;
+   padding: 40px 0;
+   
+
+}
+
+.color_acento{color:blueviolet}
+
+header{
+    background-color: rgb(245,245,245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 20px 30px;
+    font-weight: bold;
+    color: rgb(251, 251, 252);
+    font-size: 3em;
+    background-color: rgb(30,30,30);
+    border-radius: 15px;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .nav /*titulo*/{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a /*secciones*/{
+    padding: 5px 12px;
+    text-decoration:  none;
+    font-weight: bold;
+    color: rgb(78, 14, 107);
+}
+
+header a:hover{color: rgb(138, 43, 226);}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    color: white;
+
+    background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        , url("imagenes/fondo1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+#hero button {
+    margin: 0;
+}
+
+#hero h1{color: rgb(250, 249, 249);}
+
+#somos .container {
+    display: flex;
+    color: white;
+    flex-direction: column; 
+    text-align: center;
+    background-size: cover;
+}
+#somos h2 {
+    background-color: rgb(45, 45, 45);
+    color: white;                      
+    border: 2px solid blueviolet;       
+    border-radius: 10px;              
+    padding: 5px 5px;               
+    display: inline-block; 
+    width: fit-content;             
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+    margin-bottom: 1%;                
+}
+#somos p {
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+#nuestrosprogramas .container {
+    color: rgb(255, 255, 255);
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+#nuestrosprogramas h2 {
+  background-color: rgb(45, 45, 45);
+    color: white;
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    padding: 5px 5px;
+    display: inline-block; 
+    width: fit-content;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+    margin-bottom: 1%; 
+    background-position: center;
+}
+
+
+#nuestrosprogramas .carta {
+    width: 200px;
+    min-height: 250px;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 220px;
+    min-height: 280px;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+.catalogo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.carta {
+    width: 220px;
+    height: 280px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.carta:first-child{
+background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        , url("imagenes/html5_18891.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+.carta:nth-child(2){
+background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        , url("imagenes/732190.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        , url("imagenes/JS.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+.carta:nth-child(4){
+    background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        , url("imagenes/Python.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+.carta:nth-child(5){
+    background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        , url("imagenes/Java.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+.carta:nth-child(6){
+    background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        , url("imagenes/sesharp.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+
+.carta {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.carta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 20px rgba(138, 43, 226, 0.4);
+}
+
+footer {
+    background-color: rgb(20, 20, 20);
+    color: rgb(180, 180, 180);
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+
+#contacto {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#contacto h2 {
+    background-color: rgb(45, 45, 45);
+    color: white;
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    padding: 5px 15px;
+    display: inline-block;
+    width: fit-content;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+    margin-bottom: 5px;
+}
+
+.contacto-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+
+.carta-contacto:hover {
+    transform: translateY(-5px);
+    border-color: blueviolet;
+}
+
+.carta-contacto h3 {
+    color: blueviolet;
+    margin-top: 0;
+}
+
+.carta-contacto {
+    background-color: rgb(45, 45, 45);
+    border: 1px solid rgba(138, 43, 226, 0.4);
+    border-radius: 10px;
+    padding: 5px;
+    width: 210px;
+    height: 80px; /* Le das un alto definido a la tarjeta */
+    color: white;
+    
+    /* Alineación de la tarjeta */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido de arriba a abajo */
+    align-items: center;     /* Centra el contenido de izquierda a derecha */
+    text-align: center;
+}
+
+.carta-contacto p {
+    font-size: 1em;
+    margin: 0; /* Remueve márgenes que puedan descentrarlo */
+}
+
+/* Efecto de elevación al pasar el mouse sobre las cartas de contacto */
+.carta-contacto {
+    /* Agregamos una transición suave a todas las propiedades */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    cursor: pointer; /* Cambia el cursor a una mano para indicar interactividad */
+}
+
+.carta-contacto:hover {
+    /* Eleva la tarjeta 8 píxeles hacia arriba */
+    transform: translateY(-8px);
+    
+    /* Agrega una sombra violeta difuminada para el efecto de luz */
+    box-shadow: 0px 10px 20px rgba(138, 43, 226, 0.5);
+    
+    /* Resalta el borde con el color de acento */
+    border-color: blueviolet;
+}
